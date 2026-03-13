@@ -31,7 +31,8 @@ All memory is in `memory/` at workspace root. Load relevant client profile befor
 - **The workspace folder IS your local folder** — files written there are immediately accessible
 - **DO NOT use localhost HTTP servers** — they are unreliable and unnecessary
 - Adjust the file:/// path pattern below to match your local setup:
-  - Pattern: `file:///YOUR/LOCAL/PATH/TO/REPO/{project}/{file}`
+  - Pattern: `file:///Users/tylergarner_1/Desktop/standoutsocial.github.io/{project}/{file}
+  - `
 
 ## Client Work Rule
 **Before starting work on ANY client folder**, load the client profile: `memory/clients/{client}.md`. The `Work Locations` table maps every folder where that client's work lives. If no profile exists, create one using `memory/clients/_template.md`.
