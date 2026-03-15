@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>She Was Waking Up 5 Times a Night Drenched in Sweat. Then Her Sister Sent Her This Article.</title>
+    <meta name="description" content="New research reveals the gut-hormone connection behind night sweats and hot flashes. One probiotic blend is helping thousands of women sleep through the night again.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="She Was Waking Up 5 Times a Night Drenched in Sweat. Then Her Sister Sent Her This Article.">
+    <meta property="og:description" content="New research reveals the gut-hormone connection behind night sweats and hot flashes.">
+    <meta property="og:image" content="assets/images/hero-nightstand.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1B263B;
+            --primary-dark: #141D2E;
+            --primary-light: #FAF3E0;
+            --secondary: #187CB4;
+            --bg: #FFFFFF;
+            --text: #1B263B;
+            --text-light: #6B7280;
+            --accent: #FF6F61;
+            --accent-hover: #E85D50;
+            --accent-light: #FFF0EE;
+            --lavender: #8B5CF6;
+            --lavender-light: #F3F0FF;
+            --border: #E5E7EB;
+            --success: #16A34A;
+            --urgent: #DC2626;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Merriweather', serif;
+            --font-ui: 'Poppins', sans-serif;
+            --max-width: 720px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.8;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .scroll-progress {
+            position: fixed; top: 0; left: 0; height: 3px;
+            background: var(--lavender); z-index: 9999; width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* ── PUB HEADER ── */
+        .pub-header {
+            background: var(--primary); color: #fff; padding: 10px 20px;
+            font-family: var(--font-ui); font-size: 12px;
+            display: flex; justify-content: space-between; align-items: center;
+            letter-spacing: 0.5px;
+        }
+        .pub-header span { opacity: 0.7; }
+        .pub-header .pub-name {
+            font-weight: 700; opacity: 1; text-transform: uppercase;
+            letter-spacing: 1.5px; font-size: 11px;
+        }
+
+        /* ── NAV ── */
+        .nav-bar {
+            background: var(--bg); border-bottom: 1px solid var(--border);
+            padding: 12px 20px; display: flex; justify-content: center;
+            align-items: center; position: sticky; top: 0; z-index: 100;
+            transition: box-shadow 0.3s ease;
+        }
+        .nav-bar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .nav-logo { height: 36px; width: auto; }
+
+        /* ── ARTICLE ── */
+        .article-wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+        .category-tag {
+            display: inline-block; background: var(--lavender-light); color: var(--lavender);
+            font-family: var(--font-ui); font-size: 12px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1px; padding: 6px 14px;
+            border-radius: 4px; margin-top: 40px; margin-bottom: 16px;
+        }
+
+        .article-headline {
+            font-family: var(--font-heading); font-size: 36px; font-weight: 800;
+            line-height: 1.2; color: var(--primary); margin-bottom: 16px;
+        }
+        .article-deck {
+            font-size: 20px; color: var(--text-light); line-height: 1.5;
+            margin-bottom: 24px; font-style: italic;
+        }
+
+        /* ── BYLINE ── */
+        .byline {
+            display: flex; align-items: center; gap: 12px; padding: 16px 0;
+            border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+            margin-bottom: 32px; font-family: var(--font-ui);
+        }
+        .byline-avatar {
+            width: 44px; height: 44px; border-radius: 50%; background: var(--lavender-light);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; color: var(--lavender); font-size: 16px;
+        }
+        .byline-name { font-weight: 600; font-size: 14px; color: var(--primary); }
+        .byline-meta { font-size: 13px; color: var(--text-light); }
+        .byline-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: #ECFDF5; color: var(--success); font-size: 11px;
+            font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-left: auto;
+        }
+        .byline-badge svg { width: 12px; height: 12px; }
+
+        /* ── IMAGES ── */
+        .hero-image {
+            width: 100%; border-radius: 12px; margin-bottom: 32px;
+            aspect-ratio: 16/9; object-fit: cover; background: var(--primary-light);
+        }
+        .hero-caption {
+            font-size: 13px; color: var(--text-light); text-align: center;
+            margin-top: -24px; margin-bottom: 32px; font-style: italic;
+        }
+
+        /* ── BODY COPY ── */
+        .article-wrap p { margin-bottom: 24px; }
+        .article-wrap h2 {
+            font-family: var(--font-heading); font-size: 26px; font-weight: 700;
+            color: var(--primary); margin: 40px 0 16px; line-height: 1.3;
+        }
+        .article-wrap h3 {
+            font-family: var(--font-heading); font-size: 20px; font-weight: 600;
+            color: var(--primary); margin: 32px 0 12px;
+        }
+        .lead-paragraph { font-size: 19px; line-height: 1.9; }
+        .lead-paragraph .dropcap {
+            float: left; font-family: var(--font-heading); font-size: 72px;
+            font-weight: 800; line-height: 0.8; padding-right: 8px;
+            padding-top: 4px; color: var(--lavender);
+        }
+        strong { color: var(--primary); }
+
+        /* ── PULL QUOTE ── */
+        .pull-quote {
+            border-left: 4px solid var(--lavender); padding: 24px 28px;
+            margin: 36px 0; background: var(--lavender-light);
+            border-radius: 0 8px 8px 0;
+        }
+        .pull-quote p {
+            font-size: 20px; font-style: italic; line-height: 1.6;
+            color: var(--primary); margin-bottom: 8px !important;
+        }
+        .pull-quote cite {
+            font-family: var(--font-ui); font-size: 14px; font-weight: 600;
+            color: var(--text-light); font-style: normal;
+        }
+
+        /* ── STAT CALLOUT ── */
+        .stat-callout {
+            display: flex; gap: 24px; background: var(--primary); color: #fff;
+            padding: 28px 32px; border-radius: 12px; margin: 36px 0; text-align: center;
+        }
+        .stat-callout .stat-item { flex: 1; }
+        .stat-callout .stat-number {
+            font-family: var(--font-heading); font-size: 32px; font-weight: 800;
+            color: var(--lavender); display: block;
+        }
+        .stat-callout .stat-label {
+            font-family: var(--font-ui); font-size: 13px; opacity: 0.8; margin-top: 4px;
+        }
+
+        /* ── URGENCY BANNER ── */
+        .urgency-banner {
+            background: linear-gradient(135deg, var(--urgent) 0%, #991B1B 100%);
+            color: #fff; border-radius: 10px; padding: 16px 24px; margin: 36px 0;
+            display: flex; align-items: center; gap: 16px;
+            font-family: var(--font-ui);
+        }
+        .urgency-icon { font-size: 28px; flex-shrink: 0; }
+        .urgency-text { flex: 1; }
+        .urgency-text strong { color: #fff; font-size: 15px; display: block; }
+        .urgency-text span { font-size: 13px; opacity: 0.9; }
+        .countdown {
+            font-family: var(--font-heading); font-size: 24px; font-weight: 800;
+            flex-shrink: 0; min-width: 90px; text-align: center;
+        }
+
+        /* ── SYMPTOM CHECKLIST ── */
+        .symptom-check {
+            background: #FEF2F2; border: 1px solid #FECACA; border-radius: 12px;
+            padding: 28px; margin: 36px 0;
+        }
+        .symptom-check h3 { margin-top: 0; color: var(--urgent); }
+        .symptom-list { list-style: none; padding: 0; }
+        .symptom-list li {
+            padding: 10px 0; border-bottom: 1px solid #FECACA;
+            display: flex; align-items: center; gap: 12px;
+            font-size: 15px; line-height: 1.5; font-family: var(--font-ui);
+        }
+        .symptom-list li:last-child { border-bottom: none; }
+        .symptom-list .check-box {
+            width: 22px; height: 22px; border: 2px solid var(--urgent);
+            border-radius: 4px; flex-shrink: 0; display: flex;
+            align-items: center; justify-content: center; cursor: pointer;
+            transition: all 0.2s ease; font-size: 14px; color: transparent;
+        }
+        .symptom-list .check-box.checked {
+            background: var(--urgent); color: #fff; border-color: var(--urgent);
+        }
+        .symptom-result {
+            font-family: var(--font-ui); font-size: 14px; font-weight: 600;
+            color: var(--urgent); margin-top: 16px; display: none; text-align: center;
+        }
+
+        /* ── BLEND BOXES ── */
+        .blend-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 36px 0;
+        }
+        .blend-card {
+            border: 2px solid var(--border); border-radius: 12px; padding: 24px;
+            background: #FAFAFA;
+        }
+        .blend-card h4 {
+            font-family: var(--font-heading); font-size: 14px; font-weight: 700;
+            color: var(--lavender); text-transform: uppercase; letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .blend-card .blend-dose {
+            font-family: var(--font-ui); font-size: 12px; color: var(--text-light);
+            margin-bottom: 8px;
+        }
+        .blend-card p {
+            font-size: 14px; line-height: 1.5; margin-bottom: 0;
+        }
+        .blend-card .blend-icon { font-size: 24px; margin-bottom: 8px; }
+
+        /* ── CTA CARD ── */
+        .cta-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            border-radius: 16px; padding: 40px 32px; text-align: center;
+            margin: 44px 0; color: #fff;
+        }
+        .cta-card h3 { color: #fff; font-size: 24px; margin: 0 0 8px; }
+        .cta-card p { color: rgba(255,255,255,0.8); font-size: 16px; margin-bottom: 24px; }
+        .cta-btn {
+            display: inline-block; background: var(--accent); color: #fff;
+            font-family: var(--font-ui); font-size: 17px; font-weight: 700;
+            padding: 16px 40px; border-radius: 8px; text-decoration: none;
+            transition: all 0.2s ease; box-shadow: 0 4px 16px rgba(255,111,97,0.4);
+        }
+        .cta-btn:hover {
+            background: var(--accent-hover); transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(255,111,97,0.5);
+        }
+        .cta-subtext {
+            font-family: var(--font-ui); font-size: 13px; opacity: 0.7; margin-top: 12px;
+        }
+        .cta-price {
+            font-family: var(--font-ui); margin-bottom: 20px;
+        }
+        .cta-price .was {
+            text-decoration: line-through; opacity: 0.5; font-size: 18px;
+        }
+        .cta-price .now {
+            font-size: 36px; font-weight: 800; color: var(--accent);
+        }
+        .cta-price .save {
+            display: inline-block; background: var(--accent); color: #fff;
+            font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 4px;
+            margin-left: 8px; vertical-align: middle;
+        }
+
+        /* ── INLINE CTA ── */
+        .inline-cta {
+            display: flex; align-items: center; gap: 16px;
+            background: var(--accent-light); border: 1px solid var(--accent);
+            border-radius: 10px; padding: 20px 24px; margin: 32px 0;
+        }
+        .inline-cta-text {
+            flex: 1; font-family: var(--font-ui); font-size: 15px;
+            font-weight: 500; color: var(--primary);
+        }
+        .inline-cta-text strong { color: var(--accent); }
+        .inline-cta .cta-btn { font-size: 14px; padding: 12px 24px; white-space: nowrap; }
+
+        /* ── TESTIMONIALS ── */
+        .testimonial-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 36px 0; }
+        .testimonial-card { background: var(--lavender-light); border-radius: 10px; padding: 24px; }
+        .testimonial-stars { color: #FBBF24; font-size: 16px; margin-bottom: 8px; letter-spacing: 2px; }
+        .testimonial-card blockquote {
+            font-size: 15px; line-height: 1.6; font-style: italic;
+            margin-bottom: 12px; color: var(--primary);
+        }
+        .testimonial-card .reviewer {
+            font-family: var(--font-ui); font-size: 13px; font-weight: 600; color: var(--text-light);
+        }
+        .testimonial-card .verified {
+            font-size: 11px; color: var(--success); display: flex; align-items: center; gap: 4px;
+        }
+        .testimonial-card .result-tag {
+            display: inline-block; background: var(--success); color: #fff;
+            font-family: var(--font-ui); font-size: 11px; font-weight: 700;
+            padding: 2px 8px; border-radius: 4px; margin-top: 8px;
+        }
+
+        /* ── TIMELINE ── */
+        .timeline { margin: 36px 0; }
+        .timeline-item {
+            display: flex; gap: 20px; padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-week {
+            font-family: var(--font-heading); font-size: 14px; font-weight: 700;
+            color: var(--lavender); min-width: 80px; flex-shrink: 0;
+            text-transform: uppercase;
+        }
+        .timeline-content { flex: 1; }
+        .timeline-content strong { display: block; margin-bottom: 4px; }
+        .timeline-content p { font-size: 15px; margin-bottom: 0; line-height: 1.5; }
+
+        /* ── GUARANTEE ── */
+        .guarantee-box {
+            border: 2px solid var(--success); border-radius: 12px; padding: 24px 28px;
+            margin: 36px 0; display: flex; align-items: flex-start; gap: 16px;
+            background: #F0FDF4;
+        }
+        .guarantee-icon { font-size: 32px; flex-shrink: 0; }
+        .guarantee-box h4 {
+            font-family: var(--font-heading); font-size: 16px; font-weight: 700;
+            color: var(--primary); margin-bottom: 4px;
+        }
+        .guarantee-box p {
+            font-size: 14px; color: var(--text-light); margin-bottom: 0; line-height: 1.5;
+        }
+
+        /* ── FOOTER ── */
+        .article-footer {
+            border-top: 1px solid var(--border); margin-top: 48px;
+            padding: 32px 0 48px; text-align: center;
+        }
+        .article-footer p {
+            font-family: var(--font-ui); font-size: 12px; color: var(--text-light);
+            line-height: 1.7; max-width: 560px; margin: 0 auto 8px;
+        }
+        .sponsored-tag {
+            display: inline-block; font-family: var(--font-ui); font-size: 11px;
+            font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+            color: var(--text-light); border: 1px solid var(--border);
+            padding: 4px 12px; border-radius: 4px; margin-bottom: 12px;
+        }
+
+        /* ── STICKY CTA ── */
+        .sticky-cta {
+            display: none; position: fixed; bottom: 0; left: 0; right: 0;
+            background: var(--bg); border-top: 1px solid var(--border);
+            padding: 12px 20px; z-index: 100; text-align: center;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+            transform: translateY(100%); transition: transform 0.3s ease;
+        }
+        .sticky-cta.visible { transform: translateY(0); }
+        .sticky-cta .cta-btn { width: 100%; display: block; padding: 14px; font-size: 15px; }
+        .sticky-cta .cta-micro {
+            font-family: var(--font-ui); font-size: 11px; color: var(--text-light); margin-top: 4px;
+        }
+
+        /* ── REVEAL ── */
+        .reveal {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ── RESPONSIVE ── */
+        @media (min-width: 768px) {
+            .article-headline { font-size: 44px; }
+            .sticky-cta { display: none !important; }
+        }
+        @media (max-width: 767px) {
+            body { font-size: 16px; }
+            .article-headline { font-size: 28px; }
+            .article-deck { font-size: 17px; }
+            .article-wrap { padding: 0 16px; }
+            .stat-callout { flex-direction: column; gap: 16px; }
+            .stat-callout .stat-number { font-size: 28px; }
+            .testimonial-row { grid-template-columns: 1fr; }
+            .blend-grid { grid-template-columns: 1fr; }
+            .inline-cta { flex-direction: column; text-align: center; }
+            .urgency-banner { flex-direction: column; text-align: center; }
+            .cta-card { padding: 28px 20px; }
+            .pull-quote { padding: 20px; }
+            .pull-quote p { font-size: 17px; }
+            .sticky-cta { display: block; }
+            .article-footer { padding-bottom: 100px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="pub-header">
+    <span class="pub-name">Women's Wellness Weekly</span>
+    <span>March 14, 2026</span>
+</div>
+
+<nav class="nav-bar" id="navBar">
+    <img src="../../assets/refs/logo.png" alt="Vita Organics" class="nav-logo">
+</nav>
+
+<article class="article-wrap">
+
+    <span class="category-tag">Menopause &amp; Hormones</span>
+
+    <h1 class="article-headline">She Was Waking Up 5 Times a Night Drenched in Sweat. Then Her Sister Sent Her This Article.</h1>
+
+    <p class="article-deck">A little-known connection between gut bacteria and hormone balance is giving thousands of women their first full night's sleep in years. Most doctors aren't talking about it yet.</p>
+
+    <div class="byline">
+        <div class="byline-avatar">KM</div>
+        <div>
+            <div class="byline-name">Dr. Karen Mercer, ND</div>
+            <div class="byline-meta">Women's Health Editor &middot; 8 min read</div>
+        </div>
+        <div class="byline-badge">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            Fact-Checked
+        </div>
+    </div>
+
+    <img src="assets/images/hero-nightstand.png" alt="Alarm clock showing 3:17 AM on a nightstand with crumpled sheets" class="hero-image" loading="eager">
+    <p class="hero-caption">For millions of women, this scene plays out every single night. It doesn't have to.</p>
+
+    <!-- ── LEAD ── -->
+    <p class="lead-paragraph reveal">
+        <span class="dropcap">S</span>arah Mitchell hadn't slept through the night in 14 months. Not once. Every night between 2 and 4 AM, she'd wake up in a pool of sweat, heart pounding, sheets soaked, wondering if something was seriously wrong with her. "I started sleeping on a towel," she says quietly. "I was too embarrassed to tell my husband how bad it had gotten."
+    </p>
+
+    <p class="reveal">She's 53. A project manager. Three kids. The kind of woman who held everything together for everyone else. But menopause was taking her apart, one sleepless night at a time.</p>
+
+    <p class="reveal">Hot flashes during the day she could handle. Smile through it. Blame the office thermostat. But the night sweats were different. They were <em>relentless</em>. And the exhaustion that followed was destroying everything: her focus, her patience, her confidence, her marriage.</p>
+
+    <p class="reveal">"I went to my doctor three times," Sarah says. "Each time I got the same answer: <em>it's normal, it'll pass, here's a prescription for HRT.</em> But I didn't want hormones. I'd seen what my mother went through with them. I wanted something that worked <em>with</em> my body, not against it."</p>
+
+    <p class="reveal">What happened next changed everything. Not gradually. Not vaguely. Within 17 days.</p>
+
+    <!-- ── SYMPTOM CHECKER ── -->
+    <div class="symptom-check reveal">
+        <h3>Sound familiar? Check the ones that apply to you:</h3>
+        <ul class="symptom-list">
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Waking up drenched in sweat multiple times per night</li>
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Hot flashes that hit without warning during the day</li>
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Brain fog so thick you forget words mid-sentence</li>
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Mood swings that make you feel like a different person</li>
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Exhaustion that coffee can't fix</li>
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Weight gain around the middle that won't budge</li>
+            <li><span class="check-box" onclick="toggleCheck(this)">&#10003;</span> Feeling like you've lost yourself</li>
+        </ul>
+        <div class="symptom-result" id="symptomResult">If you checked 3 or more, keep reading. This was written for you.</div>
+    </div>
+
+    <!-- ── THE DISCOVERY ── -->
+    <h2 class="reveal">The Connection Her Doctor Never Mentioned</h2>
+
+    <p class="reveal">Sarah's sister is a nutritionist in Portland. During a Sunday phone call, Sarah broke down crying about the night sweats. Her sister said five words that changed the trajectory of Sarah's menopause: <strong>"It's probably your gut."</strong></p>
+
+    <p class="reveal">She explained something that most OB-GYNs still don't discuss with patients: the <strong>gut-hormone axis</strong>. Your gut microbiome doesn't just digest food. It produces and regulates <strong>95% of your body's serotonin</strong> and directly controls how your body metabolises estrogen through a collection of bacteria called the <em>estrobolome</em>.</p>
+
+    <p class="reveal">When your gut bacteria fall out of balance, and they almost always do during perimenopause, your body can't properly process the estrogen fluctuations that cause hot flashes, night sweats, mood swings, and brain fog. You're not just experiencing hormone changes. You're experiencing hormone changes <em>without the bacterial support system designed to manage them</em>.</p>
+
+    <img src="assets/images/gut-hormone-axis.png" alt="The Gut-Hormone Axis infographic showing connection between gut bacteria and estrogen metabolism" class="hero-image reveal" loading="lazy">
+
+    <div class="pull-quote reveal">
+        <p>"We've known about the estrobolome for over a decade, but it's only now entering mainstream practice. The gut doesn't just influence menopause symptoms. In many cases, it's the primary driver."</p>
+        <cite>Dr. Lisa Chen, Integrative Gynecology, Stanford Medical</cite>
+    </div>
+
+    <p class="reveal">This is why HRT helps some women and does nothing for others. This is why some women breeze through menopause and others suffer for years. The difference isn't willpower or genetics alone. <strong>It's gut health.</strong></p>
+
+    <!-- ── STATS ── -->
+    <div class="stat-callout reveal">
+        <div class="stat-item">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Of Serotonin Made in the Gut</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">40B</span>
+            <span class="stat-label">CFU Probiotic Per Serving</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">17</span>
+            <span class="stat-label">Days to First Results</span>
+        </div>
+    </div>
+
+    <!-- ── THE PRODUCT ── -->
+    <h2 class="reveal">The Formula That Stopped the Night Sweats</h2>
+
+    <p class="reveal">Sarah's sister pointed her toward a supplement called <strong>MenoStop</strong> by Vita Organics. Not a hormone pill. Not a black cohosh capsule that does nothing. A precision-engineered probiotic, prebiotic, and adaptogen blend built specifically for the gut-hormone axis during menopause.</p>
+
+    <p class="reveal">Here's what makes it different from everything else on the shelf: it attacks menopause symptoms from <strong>five angles simultaneously</strong>.</p>
+
+    <!-- ── BLEND GRID ── -->
+    <div class="blend-grid reveal">
+        <div class="blend-card">
+            <div class="blend-icon">&#129440;</div>
+            <h4>Probiotic Blend</h4>
+            <div class="blend-dose">40 Billion CFU &middot; 4 targeted strains</div>
+            <p>Lactobacillus and Bifidobacterium strains clinically shown to restore the estrobolome and rebalance estrogen metabolism</p>
+        </div>
+        <div class="blend-card">
+            <div class="blend-icon">&#127793;</div>
+            <h4>Balance Blend</h4>
+            <div class="blend-dose">600mg &middot; Black Cohosh, DIM, Dong Quai</div>
+            <p>The heavy hitters. Black cohosh alone reduced hot flashes by 26% in clinical trials. Combined with DIM, it's a powerhouse.</p>
+        </div>
+        <div class="blend-card">
+            <div class="blend-icon">&#128171;</div>
+            <h4>Mood Blend</h4>
+            <div class="blend-dose">495mg &middot; Ashwagandha, Rhodiola, Chaste Berry</div>
+            <p>Ashwagandha cut cortisol by 30% in studies. Rhodiola fights the fatigue. Chaste berry balances progesterone.</p>
+        </div>
+        <div class="blend-card">
+            <div class="blend-icon">&#9889;</div>
+            <h4>Enhance Blend</h4>
+            <div class="blend-dose">450mg &middot; Ginseng, Maca, DHEA, Ginkgo</div>
+            <p>Energy and mental clarity without stimulants. Maca and ginseng restore what menopause takes away.</p>
+        </div>
+    </div>
+
+    <p class="reveal">Plus essential vitamins: <strong>Vitamin D (300% DV)</strong>, <strong>B6 (441% DV)</strong>, and <strong>Vitamin E</strong> to fill the nutritional gaps that widen during menopause.</p>
+
+    <!-- ── FIRST CTA ── -->
+    <div class="inline-cta reveal">
+        <div class="inline-cta-text">
+            MenoStop is <strong>50% off today only</strong> ($39.95, normally $79.95). Stock is limited.
+        </div>
+        <a href="https://www.tryvitaorganics.com/products/menostop-night-sweats-hot-flashes-and-menopause-support-prebiotic-and-probiotic-blend" class="cta-btn" target="_blank" rel="noopener">Check Availability</a>
+    </div>
+
+    <!-- ── URGENCY ── -->
+    <div class="urgency-banner reveal">
+        <div class="urgency-icon">&#9203;</div>
+        <div class="urgency-text">
+            <strong>Sale ends March 24, 2026</strong>
+            <span>This batch sold out twice last month. Current inventory is limited.</span>
+        </div>
+        <div class="countdown" id="countdown">--:--:--</div>
+    </div>
+
+    <!-- ── TIMELINE ── -->
+    <h2 class="reveal">What to Expect (Week by Week)</h2>
+
+    <p class="reveal">Sarah kept a journal. Here's what she recorded:</p>
+
+    <div class="timeline reveal">
+        <div class="timeline-item">
+            <div class="timeline-week">Week 1</div>
+            <div class="timeline-content">
+                <strong>Digestion improves. Sleep deepens slightly.</strong>
+                <p>"Honestly I didn't expect anything yet. But I noticed my stomach felt calmer and I had one night where I only woke up twice instead of five times."</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-week">Week 2-3</div>
+            <div class="timeline-content">
+                <strong>Night sweats drop by 60-70%. Brain fog lifts.</strong>
+                <p>"Day 17 was the first night I slept straight through until 6 AM. I cried in the morning. I'd forgotten what that felt like."</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-week">Week 4-6</div>
+            <div class="timeline-content">
+                <strong>Hot flashes become rare. Energy returns. Mood stabilises.</strong>
+                <p>"My husband said, 'I got my wife back.' That's when I knew this wasn't placebo."</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-week">Week 8+</div>
+            <div class="timeline-content">
+                <strong>Full rebalancing. Weight starts shifting. Mental clarity is sharp.</strong>
+                <p>"I feel like myself again. Not 25. Not pretending I'm fine. Actually, genuinely fine. Better than fine."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── TESTIMONIALS ── -->
+    <h2 class="reveal">What Other Women Are Saying</h2>
+
+    <div class="testimonial-row reveal">
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>"After 6 weeks with MenoStop, my night sweats are 90% gone and I'm sleeping through the night again. I wish I'd found this two years ago."</blockquote>
+            <div class="reviewer">Sarah M.</div>
+            <div class="verified">&#10003; Verified Buyer</div>
+            <span class="result-tag">Night sweats gone in 6 weeks</span>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>"I've tried so many menopause supplements and nothing worked until MenoStop. The brain fog lifted first. Then the hot flashes just... stopped."</blockquote>
+            <div class="reviewer">Jennifer K.</div>
+            <div class="verified">&#10003; Verified Buyer</div>
+            <span class="result-tag">Hot flashes eliminated</span>
+        </div>
+    </div>
+
+    <div class="testimonial-row reveal">
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>"My doctor was amazed at how much better I'm doing. My energy is back, my mood is stable, and I lost 8 pounds without changing my diet."</blockquote>
+            <div class="reviewer">Linda R.</div>
+            <div class="verified">&#10003; Verified Buyer</div>
+            <span class="result-tag">Lost 8 lbs + energy restored</span>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>"Three weeks in and I'm sleeping 7 hours straight for the first time in two years. My sheets are dry. I don't dread bedtime anymore."</blockquote>
+            <div class="reviewer">Patricia W.</div>
+            <div class="verified">&#10003; Verified Buyer</div>
+            <span class="result-tag">Full nights sleep in 3 weeks</span>
+        </div>
+    </div>
+
+    <!-- ── THE SKEPTIC ── -->
+    <h2 class="reveal">"I've Tried Everything. Why Would This Be Different?"</h2>
+
+    <p class="reveal">You've probably tried black cohosh on its own. Maybe evening primrose oil. Maybe a generic "menopause multivitamin" from the pharmacy. None of them worked because they all made the same mistake: <strong>they treated the symptoms without fixing the system.</strong></p>
+
+    <p class="reveal">Isolated herbs can't rebalance your gut microbiome. A single-ingredient supplement can't address the five interconnected systems that collapse during menopause: gut health, hormone metabolism, stress response, energy production, and cognitive function.</p>
+
+    <p class="reveal">MenoStop is the first formula we've seen that targets all five. That's not marketing. That's the ingredient panel. Five proprietary blends, each engineered for a specific axis of menopause dysfunction. They work together because the problems are connected.</p>
+
+    <p class="reveal"><strong>Every night you wait is another night of soaking sheets, exhausted mornings, and a body that feels like it's betraying you.</strong> That's not dramatic. Ask any woman going through it. They'll tell you it's an understatement.</p>
+
+    <!-- ── LIFESTYLE IMAGE ── -->
+    <h2 class="reveal">Where Sarah Is Now</h2>
+
+    <img src="assets/images/lifestyle-morning.png" alt="Woman waking up refreshed and happy in a bright sunlit bedroom" class="hero-image reveal" loading="lazy" style="aspect-ratio:3/2;">
+
+    <p class="reveal">Eight weeks after starting MenoStop, Sarah says she barely recognises her old routine. No towel on the bed. No 3 AM wake-ups. No dreading the night.</p>
+
+    <p class="reveal">"The thing nobody tells you about menopause is how much it takes your identity," she says. "You stop being <em>you</em> and start being this exhausted, foggy, sweaty version of yourself. MenoStop gave me back <em>me</em>."</p>
+
+    <p class="reveal">She pauses. "I sent the link to my sister as a thank-you. She sent it to three friends. They all ordered it. One of them called me crying after her first full night's sleep in 11 months."</p>
+
+    <p class="reveal"><strong>That's why you're reading this right now.</strong> Because someone who cares about you shared it. Or because the algorithm finally showed you something useful. Either way, you're here. And you have a choice.</p>
+
+    <!-- ── GUARANTEE ── -->
+    <div class="guarantee-box reveal">
+        <div class="guarantee-icon">&#128170;</div>
+        <div>
+            <h4>90-Day Money-Back Guarantee</h4>
+            <p>Try MenoStop for a full 90 days. If your night sweats aren't dramatically reduced, if you're not sleeping better, if you don't feel like a different person, call +1 (844) 547-1530 for a complete refund. No questions. No hassle. The risk is entirely on Vita Organics, not on you.</p>
+        </div>
+    </div>
+
+    <!-- ── FINAL CTA ── -->
+    <div class="cta-card reveal">
+        <h3>Get MenoStop Before This Batch Sells Out</h3>
+        <div class="cta-price">
+            <span class="was">$79.95</span><br>
+            <span class="now">$39.95</span>
+            <span class="save">SAVE 50%</span>
+        </div>
+        <p>90-day guarantee. No subscription. No risk.</p>
+        <a href="https://www.tryvitaorganics.com/products/menostop-night-sweats-hot-flashes-and-menopause-support-prebiotic-and-probiotic-blend" class="cta-btn" target="_blank" rel="noopener">Get My MenoStop Now</a>
+        <div class="cta-subtext">Free shipping available &middot; One-time purchase &middot; Results in 2-3 weeks</div>
+    </div>
+
+    <footer class="article-footer">
+        <span class="sponsored-tag">Sponsored Content</span>
+        <p>This article is sponsored by Vita Organics. The views and opinions expressed are based on independent research and verified customer experiences. Individual results may vary. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your healthcare provider before starting any supplement regimen.</p>
+        <p>&copy; 2026 Women's Wellness Weekly. All rights reserved.</p>
+    </footer>
+
+</article>
+
+<!-- ── STICKY CTA ── -->
+<div class="sticky-cta" id="stickyCta">
+    <a href="https://www.tryvitaorganics.com/products/menostop-night-sweats-hot-flashes-and-menopause-support-prebiotic-and-probiotic-blend" class="cta-btn" target="_blank" rel="noopener">Get 50% Off MenoStop Today</a>
+    <div class="cta-micro">90-Day Guarantee &middot; Free Shipping &middot; Limited Stock</div>
+</div>
+
+<script>
+    // Scroll progress
+    window.addEventListener('scroll', function() {
+        var h = document.documentElement;
+        var p = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+        document.getElementById('scrollProgress').style.width = p + '%';
+    });
+
+    // Nav scroll
+    var nav = document.getElementById('navBar');
+    window.addEventListener('scroll', function() {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Scroll reveal
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+    // Sticky CTA
+    var stickyCta = document.getElementById('stickyCta');
+    var heroObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+            stickyCta.classList.toggle('visible', !e.isIntersecting);
+        });
+    }, { threshold: 0 });
+    var hero = document.querySelector('.hero-image');
+    if (hero) heroObs.observe(hero);
+
+    // Symptom checker
+    var checkedCount = 0;
+    function toggleCheck(el) {
+        el.classList.toggle('checked');
+        checkedCount = document.querySelectorAll('.check-box.checked').length;
+        var result = document.getElementById('symptomResult');
+        if (checkedCount >= 3) {
+            result.style.display = 'block';
+            result.textContent = 'You checked ' + checkedCount + ' out of 7. Keep reading. This was written for you.';
+        } else {
+            result.style.display = 'none';
+        }
+    }
+
+    // Countdown timer (to March 24, 2026)
+    function updateCountdown() {
+        var end = new Date('2026-03-24T23:59:59');
+        var now = new Date();
+        var diff = end - now;
+        if (diff <= 0) {
+            document.getElementById('countdown').textContent = 'EXPIRED';
+            return;
+        }
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor((diff % 86400000) / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        if (d > 0) {
+            document.getElementById('countdown').textContent = d + 'd ' + h + 'h';
+        } else {
+            document.getElementById('countdown').textContent =
+                String(h).padStart(2,'0') + ':' +
+                String(m).padStart(2,'0') + ':' +
+                String(s).padStart(2,'0');
+        }
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Counter animation
+    function animateCounters() {
+        document.querySelectorAll('.stat-number').forEach(function(el) {
+            var text = el.textContent.trim();
+            if (el.dataset.animated) return;
+            if (text.includes('%') || text.includes('B')) {
+                var match = text.match(/(\d+)/);
+                if (!match) return;
+                var target = parseInt(match[1]);
+                var suffix = text.replace(match[0], '');
+                var prefix = text.substring(0, text.indexOf(match[0]));
+                el.dataset.animated = 'true';
+                var duration = 1200, start = null;
+                function step(ts) {
+                    if (!start) start = ts;
+                    var progress = Math.min((ts - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = prefix + Math.floor(eased * target) + suffix;
+                    if (progress < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            } else { el.dataset.animated = 'true'; }
+        });
+    }
+    var statsObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+            if (e.isIntersecting) { animateCounters(); statsObs.unobserve(e.target); }
+        });
+    }, { threshold: 0.3 });
+    var sc = document.querySelector('.stat-callout');
+    if (sc) statsObs.observe(sc);
+</script>
+
+</body>
+</html>
